@@ -54,3 +54,9 @@ expert review of the reasoning itself (see
 The private app that reads this graph syncs from its own checkout, not from here — see that repo's
 own docs for how. `validate-vault.sh` and `gen-graph-view.py` (stdlib-only, no `package.json` here)
 are the only scripts this repo ships or needs.
+
+## License
+
+CC BY-SA 4.0 — see [`LICENSE`](LICENSE). Copyright **Tiny Tars Foundation**. Reuse and adapt the
+content freely, including commercially; credit the Foundation and release adaptations under the same
+licence. It is a content licence, not a software licence, because that is what this repository holds.
