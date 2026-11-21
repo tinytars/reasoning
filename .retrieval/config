@@ -1,0 +1,30 @@
+# The retrieval layer's four answers for this repository.
+# The contract is infra/retrieval/CONTRACT.md in promontory-studio/plover-context.
+
+# `entry` is left at its default, AGENTS.md, and here that is not the ceiling's doing: README.md is
+# 3,969 B and would still be under 12,000 B with a routing section inside it, which is how
+# finca-code and promo-code route. What decides it is audience and vocabulary. README.md is the
+# front page for the people this repository is structured for — invited health-literacy experts, and
+# a reviewer reading it cold — and CLAUDE.md's wording rule governs exactly that framing copy. The
+# routing vocabulary is node identifiers: `patientHypothesis`, `labData`, `markerGroups`. CLAUDE.md
+# puts those out of its scope as data-model identifiers rather than framing copy, so they are
+# admissible, and keeping them out of README.md keeps the rule's subject clean. README.md's own
+# "Map of the docs" already names the four root documents, which is the half an expert wants.
+
+# `out` is left at its default, HEADINGS.md.
+
+# Everything but the two forge forms under .github/. Forty-four documents: the eight at the root and
+# the thirty-six nodes of finding-dag/, whose prose is the content this repository exists to hold
+# rather than fixture data. `[!.]*.md` is the one-glob way to say that — fnmatch's `*` crosses `/`,
+# so a leading `[!.]` drops every dot-directory and keeps every depth below a named one.
+scope = [!.]*.md
+
+# A hit may be answered with the line that matched. This repository is public by design, carries no
+# app code and no credential, and holds no person's record: README.md says so as the reason invited
+# experts can be given access at all. A node's prose is an instruction to a reasoning step, and the
+# values inside it are examples written to show what a rationale has to name — not readings taken
+# from anybody. What a line carries is therefore the rule itself, and the rule is usually the
+# answer: ARCHITECTURE.md's lint rules and frontmatter keys are stated line by line, and a node's
+# `## Reasoning` block is a sequence of prohibitions where the enclosing heading says only
+# "Reasoning" and the line says what is actually forbidden.
+quote = line

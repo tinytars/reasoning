@@ -9,6 +9,14 @@ bring to a doctor's visit. It's structured so invited health-literacy experts ca
 this repo carries no app code, no credentials, and no PHI, so it can be shared with anyone doing
 that review.
 
+**Where an answer is, as opposed to what this is, is [AGENTS.md](AGENTS.md).** It routes a question
+to the document that answers it — three ranked commands, an alias table mapping the words a question
+uses onto the node or the document holding the answer, and [HEADINGS.md](HEADINGS.md) beside it as
+the fallback where the subject itself is unknown. Forty-four documents are in scope: the eight at
+the root, and the thirty-six `finding-dag/` notes, which the map below does not reach into. It also
+declares what a hit may carry: `quote = line`, with no exclusion list and a stated reason there is
+none.
+
 ## Map of the docs
 
 - **[START-HERE.md](START-HERE.md)** — onboarding: editing reasoning (no code), or wiring the
